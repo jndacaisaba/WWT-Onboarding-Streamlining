@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Employee Onboarding</title>
+        <meta name="viewport" content="width=device-widt, initial-scale=1">
+        <link rel="stylesheet" href="WWT Onboarding w PDF.css">
+    </head>
+
+    <body>
+        <h1>Welcome to WWT!</h1>
+    <div>
+        <button type="button" class="btn btn-link">
+        <a href="GetHelp.html">Need Help?</a>
+        </button>
+    </div>
+
+     <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="legalFirstName">Legal First Name:</label>
+        <input type="text" id="legalFirstName" name="legalFirstName" required>
+    
+        <label for="legalLastName">Legal Last Name:</label>
+        <input type="text" id="legalLastName" name="legalLastName" required>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    
+        <h2>NDA Form</h2>
+        <p>Please fill out the NDA form below:</p>
+    
+        <embed src="Files/NDA.pdf" type="application/pdf" width="100%" height="500px">
+        <p>If you cannot view the embedded PDF, <a href="Files/NDA.pdf" target="_blank">click here</a> to download the NDA form.</p>
+    
+        <label for="uploadedNDAForm">Upload Downloaded NDA Form:</label>
+        <input type="file" id="uploadedNDAForm" name="uploadedNDAForm" accept=".pdf">
+
+        <h2>Headshot</h2>
+        <p>Please upload a clear photo capturing the shoulder and above.</p>
+
+        <label for="headshot">Upload Headshot:</label>
+        <input type="file" id="headshot" name="headshot" accept="image/*" required>
+    
+        <h2>Section 1 of I-9 Form</h2>
+        <p>Please fill out Section 1 of the I-9 form below:</p>
+    
+        <embed src="Files/Section1ofI9.pdf" type="application/pdf" width="100%" height="500px">
+        <p>If you cannot view the embedded PDF, <a href="Files/Section1ofI9.pdf" target="_blank">click here</a> to download the I9 form.</p>
+        
+        <label for="uploadedI9Form">Upload Downloaded Section 1 of I-9 Form:</label>
+        <input type="file" id="uploadedI9Form" name="uploadedI9Form" accept=".pdf">
+        
+        <h2>Section 2 of I-9</h2>
+        <p>Find someone you trust to review your personal documents for Section 2 of the I-9 Form. Visit <a href="Files/I9AcceptedDocs.pdf" target="_blank">this website</a> to view the acceptable legal documents.</p>
+        <label for="reviewerName">Reviewer's Name:</label>
+        <input type="text" id="reviewerName" name="reviewerName" required>
+
+        <label for="reviewerEmail">Reviewer's Email Address:</label>
+        <input type="email" id="reviewerEmail" name="reviewerEmail" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
